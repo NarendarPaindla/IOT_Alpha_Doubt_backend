@@ -1,6 +1,9 @@
 package com.example.model;
 
 import lombok.Data;
+
+import java.time.LocalDateTime;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -18,4 +21,6 @@ public class User {
     private String degreeLevel;
     private String academicYear;
     private String university;
+    private String resetToken;
+    private LocalDateTime resetTokenExpiry;
 }
