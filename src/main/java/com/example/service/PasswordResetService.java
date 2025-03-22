@@ -24,7 +24,7 @@ public class PasswordResetService {
     private PasswordEncoder passwordEncoder;
 
     // Adjust these values as needed:
-    private final String FROM_EMAIL = "";// Sender's email address
+    private final String FROM_EMAIL = "knowledgepenchuko142586@gmail.com";// Sender's email address
     private final String RESET_URL = "http://localhost:5173/reset-password"; // Frontend reset page URL
 
     public boolean generateResetToken(String email) {
